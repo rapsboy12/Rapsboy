@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RapBoys Web App</title>
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#111;
+color:white;
+text-align:center;
+}
+
+header{
+background:#000;
+padding:20px;
+font-size:25px;
+}
+
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+}
+
+.card{
+background:#1e1e1e;
+padding:20px;
+margin:15px;
+border-radius:10px;
+width:200px;
+box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+
+button{
+background:#00bcd4;
+border:none;
+padding:10px 15px;
+border-radius:5px;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#0097a7;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+RapBoys WEB APP
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Dashboard</h2>
+<p>Selamat datang di aplikasi.</p>
+<button onclick="alert('Dashboard dibuka')">Buka</button>
+</div>
+
+<div class="card">
+<h2>Tools</h2>
+<p>Kumpulan tools web.</p>
+<button onclick="alert('Tools dibuka')">Buka</button>
+</div>
+
+<div class="card">
+<h2>About</h2>
+<p>Informasi aplikasi.</p>
+<button onclick="about()">Detail</button>
+</div>
+
+</div>
+
+<script>
+function about(){
+alert("Ini web RapBoys.");
+}
+</script>
+
+</body>
+</html>
